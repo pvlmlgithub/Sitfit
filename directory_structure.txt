@@ -1,0 +1,189 @@
+ResidualMaskingNetwork
+├── MANIFEST.in
+├── configs
+│   ├── affectnet_config.json
+│   ├── ck_config.json
+│   ├── config.json
+│   ├── fer2013_config.json
+│   ├── table_config.json
+│   └── z_config.json
+├── data.csv
+├── deploy.prototxt.txt
+├── legacy
+│   ├── cm_cbam.py
+│   ├── cm_inception.py
+│   ├── cm_resmasking.py
+│   ├── cm_resnet.py
+│   ├── cm_vemo_resmasking.py
+│   ├── cm_vemo_resnet18.py
+│   ├── cm_vgg.py
+│   ├── demo_one_image.py
+│   ├── demo_one_video.py
+│   ├── gradCAM_resmasking.py
+│   ├── gradCAM_resnet18.py
+│   ├── gradCAM_vgg.py
+│   ├── main_affectnet.py
+│   ├── main_ck.py
+│   ├── main_imagenet.py
+│   ├── main_z.py
+│   ├── masking_provement.py
+│   ├── masking_sigmoid.py
+│   ├── rm_saved.sh
+│   ├── vj_infer.py
+│   └── wrong_in_fer.py
+├── main_fer2013.py
+├── models
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   ├── alexnet.cpython-310.pyc
+│   │   ├── attention.cpython-310.pyc
+│   │   ├── attention_module.cpython-310.pyc
+│   │   ├── basic_layers.cpython-310.pyc
+│   │   ├── brain_humor.cpython-310.pyc
+│   │   ├── centerloss_resnet.cpython-310.pyc
+│   │   ├── densenet.cpython-310.pyc
+│   │   ├── fer2013_models.cpython-310.pyc
+│   │   ├── googlenet.cpython-310.pyc
+│   │   ├── inception.cpython-310.pyc
+│   │   ├── inception_resnet_v1.cpython-310.pyc
+│   │   ├── masking.cpython-310.pyc
+│   │   ├── res_dense_gle.cpython-310.pyc
+│   │   ├── resatt.cpython-310.pyc
+│   │   ├── residual_attention_network.cpython-310.pyc
+│   │   ├── resmasking.cpython-310.pyc
+│   │   ├── resmasking_naive.cpython-310.pyc
+│   │   ├── resnet.cpython-310.pyc
+│   │   ├── resnet112.cpython-310.pyc
+│   │   ├── resnet50_scratch_dims_2048.cpython-310.pyc
+│   │   ├── runet.cpython-310.pyc
+│   │   ├── utils.cpython-310.pyc
+│   │   └── vgg.cpython-310.pyc
+│   ├── _utils.py
+│   ├── alexnet.py
+│   ├── attention.py
+│   ├── attention_module.py
+│   ├── basic_layers.py
+│   ├── brain_humor.py
+│   ├── centerloss_resnet.py
+│   ├── densenet.py
+│   ├── fer2013_models.py
+│   ├── googlenet.py
+│   ├── grad_cam_resmaking.py
+│   ├── inception.py
+│   ├── inception_resnet_v1.py
+│   ├── masking.py
+│   ├── res_dense_gle.py
+│   ├── resatt.py
+│   ├── residual_attention_network.py
+│   ├── resmasking.py
+│   ├── resmasking_naive.py
+│   ├── resnet.py
+│   ├── resnet112.py
+│   ├── resnet50_scratch_dims_2048.py
+│   ├── runet.py
+│   ├── segmentation
+│   │   ├── __init__.py
+│   │   ├── _utils.py
+│   │   ├── deeplabv3.py
+│   │   ├── fcn.py
+│   │   ├── segmentation.py
+│   │   └── unet_basic.py
+│   ├── utils.py
+│   └── vgg.py
+├── output.png
+├── pretrained_ckpt
+├── pyproject.toml
+├── res10_300x300_ssd_iter_140000.caffemodel
+├── rmn
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-310.pyc
+│   │   └── version.cpython-310.pyc
+│   ├── configs
+│   │   └── fer2013_config.json
+│   ├── models
+│   │   ├── __init__.py
+│   │   ├── _utils.py
+│   │   ├── alexnet.py
+│   │   ├── attention.py
+│   │   ├── attention_module.py
+│   │   ├── basic_layers.py
+│   │   ├── brain_humor.py
+│   │   ├── centerloss_resnet.py
+│   │   ├── densenet.py
+│   │   ├── fer2013_models.py
+│   │   ├── googlenet.py
+│   │   ├── grad_cam_resmaking.py
+│   │   ├── inception.py
+│   │   ├── inception_resnet_v1.py
+│   │   ├── masking.py
+│   │   ├── res_dense_gle.py
+│   │   ├── resatt.py
+│   │   ├── residual_attention_network.py
+│   │   ├── resmasking.py
+│   │   ├── resmasking_naive.py
+│   │   ├── resnet.py
+│   │   ├── resnet112.py
+│   │   ├── resnet50_scratch_dims_2048.py
+│   │   ├── runet.py
+│   │   ├── segmentation
+│   │   │   ├── __init__.py
+│   │   │   ├── _utils.py
+│   │   │   ├── deeplabv3.py
+│   │   │   ├── fcn.py
+│   │   │   ├── segmentation.py
+│   │   │   └── unet_basic.py
+│   │   ├── utils.py
+│   │   └── vgg.py
+│   └── version.py
+├── rmn.egg-info
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   ├── dependency_links.txt
+│   ├── requires.txt
+│   └── top_level.txt
+├── script
+│   ├── apt_init_vast.sh
+│   ├── gen_ensemble.py
+│   ├── gen_results.py
+│   ├── pip_init_vast.sh
+│   └── send.sh
+├── setup.py
+├── trainers
+│   ├── __init__.py
+│   ├── _fer2013_trainer.py
+│   ├── centerloss_trainer.py
+│   ├── ck_trainer.py
+│   ├── dist_trainer.py
+│   ├── trainer.py
+│   ├── tta_trainer.py
+│   └── z_trainer.py
+└── utils
+    ├── __init__.py
+    ├── augmenters
+    │   ├── 002.py
+    │   ├── augment.py
+    │   └── rotate.py
+    ├── center_loss.py
+    ├── datasets
+    │   ├── __init__.py
+    │   ├── affectnet_dataset.py
+    │   ├── ck_dataset.py
+    │   ├── fer2013dataset.py
+    │   ├── mixed_emotion.py
+    │   ├── mnist.py
+    │   ├── table_dataset.py
+    │   └── z_dataset.py
+    ├── generals.py
+    ├── losses.py
+    ├── metrics
+    │   ├── __init__.py
+    │   ├── metrics.py
+    │   └── segment_metrics.py
+    ├── processing
+    │   └── __init__.py
+    ├── radam.py
+    └── utils.py
+
+18 directories, 168 files
